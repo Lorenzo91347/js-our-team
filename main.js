@@ -11,7 +11,7 @@ const team = [
     {
         teamName: 'Angela Carroll',
         role: 'Chief Editor',
-        image: 'angela-carroll-chief-editor.jpg'
+        image: 'angela-caroll-chief-editor.jpg'
     }
     ,
     {
@@ -43,18 +43,34 @@ const team = [
 //Console Log for the array
 
 console.log(team);
-/*
-Code for Posting the content of the array in the DOM(unfinished)
+
+//Code for Posting the content of the array in the DOM(unfinished)
 
 const paxName = document.querySelectorAll('.name');
 const imageDoc = document.querySelectorAll('.img');
 const roles = document.querySelectorAll('.role');
 let i = 0
+let teamImages = [];
+
 function cardFill() {
-    for (i = 0; i <= team.length; i++) {
-        paxName[i].append = team[i].teamName;
-    }
+    teamImages.push(team[i].image);
+    imageDoc.src = `img/${teamImages[i]}`;
+    paxName[i].append(team[i].teamName);
+    imageDoc[i].append(teamImages);
+    roles[i].append(team[i].role);
 }
-*/
+
+
+
+for (i = 0; i <= 5; i++) {
+
+    cardFill();
+
+}
+
+
+
+
+
 
 
