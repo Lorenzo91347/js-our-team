@@ -1,0 +1,39 @@
+/*
+Reset
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Header with Title
+*/
+
+header {
+    width: 50vw;
+    text-align: center;
+    margin: auto;
+}
+
+/*
+Cards and Container
+*/
+
+.container-main {
+    width: 73.125rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(30% - 50px);
+    height: 475px;
+    background-color: yellow;
+    border: 1px solid;
+
+}
